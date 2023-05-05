@@ -1,0 +1,122 @@
+// Base setup
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #262626;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Main styles
+
+#form {
+  border-radius: 0.5rem;
+  background-color: whitesmoke;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 30rem;
+}
+
+#form h1 {
+  color: blueviolet;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#form button {
+  font-size: 1.2rem;
+  font-family: inherit;
+  background-color: blueviolet;
+  padding: 1rem;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.form-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8rem;
+  gap: 0.3rem;
+}
+
+.form-input-group input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  flex-shrink: 0;
+  display: block;
+  font-size: 1.2rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.form-input-group input:focus {
+  outline: none;
+}
+
+.form-input-group.error input {
+  border-color: #fc3c3c;
+}
+
+.form-input-group.success input {
+  border-color: #0edd83;
+}
+
+.form-input-group .form-input-error {
+  display: block;
+  font-size: 0.9rem;
+  color: #fc3c3c;
+  height: 1.3rem;
+}
+
+////////////////////////////////////////////////
+// Ignore this part
+.creator {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: #fff;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-family: "Orbitron", sans-serif;
+
+  &__heading {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__social {
+    svg {
+      width: 3rem;
+      height: 3rem;
+      fill: #fff;
+    }
+  }
+}

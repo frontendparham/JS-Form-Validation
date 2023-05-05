@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <script src="src/js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" id="form">
+        <h1>Sign Up</h1>
+        <div class="form-input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" autocomplete="off" />
+          <span class="form-input-error"></span>
+        </div>
+        <div class="form-input-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" autocomplete="off" />
+          <span class="form-input-error"></span>
+        </div>
+        <div class="form-input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+          <span class="form-input-error"></span>
+        </div>
+        <div class="form-input-group">
+          <label for="password2">Password again</label>
+          <input type="password" id="password2" name="password2" />
+          <span class="form-input-error"></span>
+        </div>
+        <button type="submit">Sign up</button>
+      </form>
+    </div>
+
+    <!-- Ignore This Part -->
+    <div class="creator">
+      <h1 class="creator__heading">
+        This project was made<br />by Parham Tavakolian
+      </h1>
+      <div class="creator__socials">
+        <a
+          href="https://github.com/frontendparham"
+          target="_blank"
+          class="creator__social"
+        >
+          <svg>
+            <use xlink:href="src/img/icons.svg#icon-github"></use>
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/parham-tavakolian/"
+          target="_blank"
+          class="creator__social"
+        >
+          <svg>
+            <use xlink:href="src/img/icons.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
