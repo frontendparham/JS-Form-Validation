@@ -16,4 +16,4 @@ Implement a simple form validation on "submit" and "keyup" events. For this poje
 
 ### Links
 
-- Live on: [Codepen](https://forkify-parham.netlify.app/)
+- Live on: [Codepen](https://codepen.io/frontendparham/pen/RwexBWw)
